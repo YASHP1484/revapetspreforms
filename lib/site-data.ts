@@ -4,6 +4,8 @@ export type ProductRange = {
   name: string;
   kind: "Bottle preform" | "Jar preform";
   note?: string;
+  description?: string;
+  filledImage?: string;
 };
 
 export const productRanges: ProductRange[] = [
