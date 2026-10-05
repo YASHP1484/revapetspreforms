@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, CheckCircle2, Factory, Globe2, Target, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Factory, Globe2, Target, Phone, Mail, MapPin, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Company Profile",
@@ -15,11 +15,17 @@ export default function CompanyProfilePage() {
         <div>
           <p className="eyebrow">COMPANY PROFILE</p>
           <h1>Reva PET Preforms</h1>
+          <div className="mt-5 mb-2 inline-flex items-center gap-2 px-5 py-2 bg-[#087fa5]/20 border border-[#087fa5]/30 rounded-full text-sm font-bold text-[#70d3ea] tracking-wider">
+            <Calendar size={18} /> SINCE 2022
+          </div>
           <p>
-            Established with a vision to deliver premium quality PET packaging solutions, 
-            Reva PET Preforms has grown into a trusted manufacturer of PET preforms, bottles, 
-            and jars. We operate from our state-of-the-art facility near Santej, Gandhinagar.
+            Starting our journey in 2022 with a clear vision to deliver premium quality PET packaging solutions, 
+            Reva PET Preforms has rapidly grown into a trusted manufacturer of PET preforms, bottles, 
+            and jars. We operate from our state-of-the-art facility near Santej, Gandhinagar, ensuring excellence in every batch.
           </p>
+        </div>
+        <div className="page-hero-image">
+          <Image src="/images/preform-range.png" alt="Reva PET Preforms Facility" fill priority sizes="(max-width: 900px) 100vw, 50vw" />
         </div>
       </section>
 
